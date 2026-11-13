@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "sources/message.mllp",
+      "bytes": 259,
+      "sha256": "baa7f360ea23034b275a2adf6a655bbb3d5195ccfa11394b6fe0c5fae5282adc"
+    },
+    {
+      "path": "sources/expected-observations.json",
+      "bytes": 144,
+      "sha256": "526bbce54cfb77f188d9b22726fabb9a0eda980ff4999cdd45ff156a28adcf05"
+    }
+  ]
+}

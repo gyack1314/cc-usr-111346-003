@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "tables": {
+    "senders": {
+      "file": "normal-senders.jsonl",
+      "sha256": "7ea70e46c0f3912b7ea65fb3f6c528b4a7b58a7838f8c4ad06e60130fc3fc019",
+      "bytes": 58,
+      "rows": 1,
+      "fields": [
+        "id",
+        "application",
+        "facility"
+      ]
+    },
+    "messages": {
+      "file": "normal-messages.jsonl",
+      "sha256": "a8755f33d59f93d589a3ce4c32362cc5f03e5a9160f9bb97b39562f6863f8a58",
+      "bytes": 90,
+      "rows": 1,
+      "fields": [
+        "id",
+        "sender",
+        "control_id",
+        "report",
+        "continuation"
+      ]
+    },
+    "expected_groups": {
+      "file": "normal-expected_groups.jsonl",
+      "sha256": "52ed397d3b10caf20b4d0bb44c37d4627bb7ba080a748ed086ebe872d64f5f5b",
+      "bytes": 68,
+      "rows": 1,
+      "fields": [
+        "id",
+        "message",
+        "order",
+        "observations"
+      ]
+    }
+  }
+}
