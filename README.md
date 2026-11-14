@@ -19,3 +19,15 @@ python -m hl7_data.cli data/boundary.json
 docker build -t hl7-data .
 docker run --rm hl7-data
 ```
+
+## ORU^R01 受限接收端
+
+`hl7_data/receiver/` 提供 MLLP 帧接收、HL7 受限解码、报告组装与两阶段确认回执账，
+仅接收合成资料、不做临床判断。帧接收、消息解码、报告组装与回执账四层分离，
+支持断连、重送与应用暂时失败的本地调度重演。设计与运行方式见
+[docs/oru-receiver.md](docs/oru-receiver.md)。
+
+```sh
+python -m unittest discover -s tests -v
+PYTHONPATH=. python3 -I demos/oru_receiver_demo.py
+```
